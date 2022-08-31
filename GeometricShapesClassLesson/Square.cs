@@ -6,25 +6,18 @@ using System.Threading.Tasks;
 
 namespace GeometricShapesClassLesson
 {
-    internal class Square
+    internal class Square : Rect
     {
-        public int Side1 { get; set; }
+       
 
-        public int Perimeter()
-        {
-            return Side1 * 4;
-        }
-
-        public int Area()
-        {
-            return Side1 * Side1;
-        }
-
-        public Square(int side)
+        public Square(int side): base(side,side)      
         {
             Side1 = side;
         }
-
+        public override string Print()
+        {
+            return $"All Sides [{Side1}]";
+        }
 
 
     }

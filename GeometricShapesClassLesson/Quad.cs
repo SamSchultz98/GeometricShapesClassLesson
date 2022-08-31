@@ -28,7 +28,10 @@ namespace GeometricShapesClassLesson
             Side4 = s4;
         }
 
-        
+        public virtual string Print()
+        {
+            return $"Side1[{Side1}], Side2[{Side2}], Side3[{Side3}], Side4[{Side4}]";
+        }
 
 
 
